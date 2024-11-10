@@ -1,0 +1,255 @@
+.hero-bg{
+    background: url(../img/bg.jpg);
+    box-shadow: inset 0 -65px #fff ;
+    align-items: center;
+}
+
+
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 40px;
+    padding-top: 150px;
+}
+
+.main{
+    align-self: end;
+    padding-bottom: 200px;
+}
+
+.avatar{
+
+    padding-top: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.code{
+    font-family: "Roboto mono";
+    font-size: 1.5rem;
+    color: #01BBFF;
+    font-weight: bold;
+}
+
+.main h1{
+    font-size: 4.68rem;
+    margin-top: 10px;
+    line-height: 1;
+}
+
+.digitacao{
+    margin-bottom: 45px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.digitacao .texto{
+    font-size: 3.3rem;
+    color: #01BBFF;
+    font-weight: bold;
+    position: relative;
+}
+
+.digitacao .texto.first-text{
+    color:#AEAEAE;
+    padding-right: 10px;
+}
+.texto.sec-text::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url(../img/bg.jpg);
+    border-left: 2px solid #AEAEAE;
+    animation: animate 4s steps(12) infinite;
+}
+.main h2 span{
+    color: #01BBFF;
+}
+
+.main-text{
+    font-size: 1.25rem;
+    color: #AEAEAE;
+    max-width: 600px;
+    margin-bottom: 60px;
+}
+
+
+
+
+.redes-btn{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.redes-cv{
+    border: 3px solid #01BBFF;
+    padding: 20px 60px;
+    font-weight: 300;
+    font-size: 1.25rem;
+    border-radius: 20px;
+    transition: 0.2s;
+    display: flex;
+    gap: 5px;
+}
+.redes-cv:hover{
+    border: 3px solid #fff;
+    transition: 0.2s;
+}
+
+.redes{
+    display: flex;
+    gap: 40px;
+}
+
+
+
+/* kEYFRAME */
+@keyframes animate{
+    40%, 60%{
+        left: 100%;
+    }
+    10%{
+        left: 100%;
+    }
+}
+
+
+/* MEDIA */
+
+@media (max-width:1350px){
+    .hero{
+        padding-top: 200px;
+        height: 100vh;
+    }
+}
+
+@media (max-width:1000px){
+    
+    .hero{
+        display: flex;
+    }
+    .avatar{
+        display: none;
+         align-items: center;
+    }
+
+    .main{
+        height: calc(95vh - 250px);
+        align-items: center;
+        /* padding-top: 200px; */
+    }
+
+    .hero-bg{
+        box-shadow: none ;
+
+    }
+}
+
+@media (max-width:800px){
+    .hero{
+    height: calc(120vh - 250px);
+    }
+}
+@media (max-width:700px) {
+    .digitacao .texto.first-text{
+        color:#AEAEAE;
+        padding-right: 5px;
+    }
+    
+    .main{
+        align-self: center;
+    }
+    
+    .code{
+        font-family: "Roboto mono";
+        font-size: 1.1rem;
+        color: #01BBFF;
+        font-weight: bold;
+    }
+
+    .main-text{
+        font-size: 1.1rem;
+        max-width: 450px;
+
+    }
+    
+    .main h1{
+        font-size: 2.98rem;
+        margin-top: 10px;
+        line-height: 1;
+    }
+    
+    .digitacao{
+        margin-bottom: 45px;
+    }
+    
+    .digitacao .texto{
+        font-size: 2.3rem;
+    } 
+}
+
+@media (max-width:550px){
+    .main{
+        height: calc(100vh - 250px);
+        align-items: center;
+        /* padding-top: 200px; */
+    }
+    .redes{
+        gap: 20px;
+    }
+    
+    .redes-cv{
+        padding: 20px 20px;
+        font-weight: 300;
+        font-size: 1.05rem;
+    }
+
+    .redes-btn{
+        width: 120px;
+        gap: 20px;
+    }
+}
+
+@media (max-width:500px){
+
+    .hero {
+        height: 100vh;
+    }
+
+    .main h1{
+        font-size: 2.58rem;
+        margin-top: 10px;
+        line-height: 1;
+    }
+    
+    .digitacao .texto{
+        font-size: 2.2rem;
+    } 
+
+    .logo{
+        width: 50px;
+        height: auto;
+    }
+    .digitacao .texto{
+        font-size: 1.9rem;
+    } 
+    .redes-btn{
+        width: 110px;
+        gap: 20px;
+    }
+}
+
+@media (max-width:395px){
+    .digitacao .texto{
+        font-size: 1.8rem;
+    } 
+    .redes-cv{
+        font-size: 0.9rem;
+    }
+}

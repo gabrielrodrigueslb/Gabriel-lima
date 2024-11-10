@@ -1,0 +1,101 @@
+
+.hamburguer{
+    border: none;
+    margin-left: auto;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburguer::before,.hamburguer::after{
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+
+
+@media (max-width:800px){
+    header{
+        padding: 40px 4%;
+    }
+
+}
+
+@media (max-width:750px){
+    
+    .hamburguer{
+        display: block;
+        z-index: 1;
+    
+    }
+
+
+    .menu{
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100vw;
+        height: 55vh;
+        background: #00010C;
+        clip-path: circle(100px at 90% -25%);
+        transition: 0.3s ease-in-out;
+        padding: 0;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+        padding-top: 80px;
+    }
+
+    .menu a{
+        font-size: 20px;
+        opacity: 0;
+    }
+    .menu a:nth-child(1) a{
+       transition: 0.5s 0.4s; 
+    }
+    .menu a:nth-child(2) a{
+        transition: 0.5s 0.4s; 
+    }
+    .menu a:nth-child(3) a{
+        transition: 0.5s 0.4s; 
+    }
+}
+
+
+/* ESTILOS ATIVOS */
+.navbar.active .menu{
+    clip-path: circle(1500px at 90% -15%);
+    pointer-events: all;
+    transition: 0.6s ease-in;
+}
+
+.navbar.active .menu a{
+    opacity: 1;
+}
+
+.navbar.active .hamburguer{
+    position: fixed;
+    top: 45px;
+    right: 23px;
+    border-top-color: transparent;
+    transition: 0 0.2s ease-in;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.navbar.active .hamburguer::before{
+    transform: rotate(135deg);
+}
+
+.navbar.active .hamburguer::after{
+    transform: rotate(-135deg);
+    top: -7px;
+}
