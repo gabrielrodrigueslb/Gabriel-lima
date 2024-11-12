@@ -1,0 +1,101 @@
+.contato-bg {
+    background: #01020D;
+    border-block: 2px solid #29292950;
+}
+
+.contato{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    align-items: center;
+}
+
+.contatos-meios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.contato-redes{
+    display: flex;
+    gap: 30px;
+    
+}
+
+.contato-redes img{
+    width: 49px;
+    max-height: 49px;
+}
+
+.contato-redes img:nth-last-child(1){
+    margin-bottom: 25px;
+}
+
+.foto{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.contatos a{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    margin-bottom: 19px;
+}
+
+.contatos p {
+    font-size: 1.125rem;
+}
+
+.contatos:nth-last-child(1){
+    margin-bottom: 70px;
+}
+
+
+.contato-conversa h2{
+    font-size: 2.5rem;
+    color: #029cfb;
+    font-weight: 500;
+    margin-bottom: 44px;
+}
+
+.contato-conversa p{
+    color: #AEAEAE;
+    font-size:  1.25rem;
+    margin-bottom: 55px;
+}
+
+.contato-conversa{
+    text-align: center;
+    
+}
+
+.contato-conversa a{
+    padding: 20px 30px;
+    color: #fff;
+    background: #029cfb;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: 0.2s;
+    display: inline-block;
+}
+
+.contato-conversa a:hover{
+    background: #fff;
+    color: #029cfb;
+    transition: 0.2s;
+}
+
+@media (max-width:630px){
+    .contato{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-bottom: 60px;
+    }
+}

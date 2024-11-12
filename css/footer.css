@@ -1,0 +1,45 @@
+.footer-bg{
+    background: #181818;
+}
+
+.footer-infos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.footer p{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.footer{
+    padding-block: 48px;
+}
+
+.footer-menu{
+    display: flex;
+    gap: 15px;
+}
+
+.footer-menu a{
+    padding-block: 10px;
+    transition: 0.2s;
+}
+
+.footer-menu a:hover{
+    color: #029CFB;
+    transition: 0.2s;
+}
+
+
+@media (max-width:630px){
+    .footer-infos a{
+        margin-bottom: 25px;
+    }
+    
+    .footer-infos{
+        flex-direction: column;
+    }
+}

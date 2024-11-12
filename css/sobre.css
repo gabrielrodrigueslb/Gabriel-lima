@@ -1,5 +1,5 @@
 .sobre-bg{
-    background: url(../img/bg-invert.jpg);
+    background: linear-gradient(63.142deg, #00010C 0%, #05134A 100%);
 }
 
 .sobre{
@@ -40,6 +40,8 @@
 .sobre img{
     align-items: center;
     justify-self: center;
+    max-width: 355px;
+    max-height: 350px;
 }
 @media (max-width:760px){
     .sobre{
