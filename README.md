@@ -14,6 +14,6 @@ O portfólio foi desenvolvido para demonstrar minhas habilidades em design e des
 
 ## Como acessar
 
-Você pode acessar o portfólio diretamente [clicando aqui]([link-do-portfólio](https://gabrielrodrigueslb.github.io/Gabriel-lima/) ou clonando este repositório para visualizar localmente.
+Você pode acessar o portfólio diretamente [clicando aqui](https://gabrielrodrigueslb.github.io/Gabriel-lima/) ou clonando este repositório para visualizar localmente.
 
 ![image](https://github.com/user-attachments/assets/8346374e-1c76-459d-98f4-b6f036656dda)
