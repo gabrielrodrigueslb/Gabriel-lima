@@ -5,7 +5,7 @@
 
 .projetos {
   display: block;
-  padding-bottom: 60px;
+  padding-block: 30px 60px;
 }
 
 .projetos-texto{
@@ -81,10 +81,21 @@
 
 .preview{
   background: #029CFB;
+  transition: 0.2s;
 }
 .repositorio{
   background: #fff;
   color: #000;
+  transition: 0.2s;
+}
+.preview:hover{
+  background: #fff;
+  color: #029CFB;
+  transition: 0.2s;
+}
+.repositorio:hover{
+  color: #029CFB;
+  transition: 0.2s;
 }
 
 @media (max-width:1065px){
