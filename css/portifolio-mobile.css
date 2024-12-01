@@ -1,5 +1,18 @@
+.mobile{
+    display: none;
+}
+
+@media (max-width:860px){
+    #projeto-desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
 .projetos-bg{
-    background: #01020D;
+    background: linear-gradient(90.172deg, #00010C 0%, #05134A 100%);
 }
 
 .projetos {
@@ -13,7 +26,7 @@
     gap: 30px;
     justify-content: center;
     padding-bottom: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .projetos-texto{
@@ -21,15 +34,15 @@
 }
 
 .projetos-texto h2{
-    padding-top: 90px;
-    font-size: 2.5rem;
+    padding-top: 60px;
+    font-size: 2rem;
     font-weight: 500;
     color: #0375BB;
     margin-bottom: 20px;
 }
 
 .projetos-texto p{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 500;
     color: #aeaeae;
     margin-bottom: 35px;
@@ -41,7 +54,7 @@
     max-width: 400px;
 }
 
-.projeto-card img{
+.projeto-imagem{
     border-radius: 25px 25px 0 0;
 }
 
@@ -59,11 +72,8 @@
 }
 
 .projeto-titulo{
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 10%;
-    justify-content: space-between;
-    display: flex;
+    max-width: 120px;
+    margin-bottom: 15px;
 }
 
 .tech-icon{
@@ -81,7 +91,7 @@
 }
 .btn2:hover{
     transition: 0.2s;
-    color: #0375BB;
+    color: #0375bb;
 }
 
 .btn1{
@@ -92,6 +102,7 @@
     transition: 0.2s;
     margin-right: 10px;
     font-weight: 500;
+    margin-bottom: 10px;
 }
 .btn2{
     padding: 15px 20px;
@@ -103,9 +114,30 @@
     color: #000;
 }
 
+
+.projeto-tecnologias{
+    display: flex;
+    gap: 13px;
+    padding-block: 5px 15px;
+  }
+  
+  .projeto-tecnologias img{
+    max-height: 25px;
+  }
+
+}
 @media (max-width:395px){
     .btn1 {
-        margin-bottom: 10px;
+        
+        font-size: 0.9rem;
+    }
+    .btn2{
+        font-size: 0.9rem;
+    }
+}
+@media (max-width:365px){
+    .btn1 {
+        
         font-size: 0.8rem;
     }
     .btn2{
