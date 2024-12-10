@@ -1,4 +1,10 @@
+/* externos */
+@import url(./externos/animate.css);
+
+
+/* estilos gerais */
 @import url(./global.css);
+@import url(./animacao.css);
 @import url(./header.css);
 @import url(./hamburguer.css);
 @import url(./main.css);

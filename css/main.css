@@ -39,36 +39,48 @@
     line-height: 1;
 }
 
-.digitacao{
+
+
+.digitacao {
     margin-bottom: 45px;
     align-items: center;
     overflow: hidden;
+    font-family: monospace; /* Fonte de estilo fixo para o efeito clássico */
 }
 
-.digitacao .texto{
+.digitacao .texto {
     font-size: 3.3rem;
     color: #01BBFF;
     font-weight: bold;
-    position: relative;
+    display: inline-block;
+    white-space: nowrap; /* Garante que o texto não quebre */
 }
 
-.digitacao .texto.first-text{
-    color:#AEAEAE;
+.digitacao .texto.first-text {
+    color: #AEAEAE;
     padding-right: 10px;
 }
-.texto.sec-text::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(132.185deg, #00010C 60%, #05134A 100%);
-    background-attachment: fixed; /* Fixar o background */
-    background-size: 100% 100%; /* Para fazer o ajuste */
-    border-left: 2px solid #AEAEAE;
-    animation: animate 4s steps(12) infinite;
+
+.digitacao .cursor {
+    font-size: 3.3rem; /* Tamanho igual ao do texto */
+    color: white; /* Define a cor branca */
+    margin-left: 2px; /* Espaçamento sutil entre o texto e o cursor */
+    animation: blink-smooth 0.5s infinite;
+    display: inline-block;
+    height: 100%; /* Ajusta a altura para acompanhar o texto */
 }
+
+/* Animação de piscar do cursor */
+@keyframes blink-smooth {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+
 .main h2 span{
     color: #01BBFF;
 }
@@ -109,17 +121,6 @@
     gap: 40px;
 }
 
-
-
-/* kEYFRAME */
-@keyframes animate{
-    40%, 60%{
-        left: 100%;
-    }
-    10%{
-        left: 100%;
-    }
-}
 
 
 /* MEDIA */
@@ -194,6 +195,10 @@
     .digitacao .texto{
         font-size: 2.3rem;
     } 
+
+    .digitacao .cursor{
+        font-size: 2.3rem;
+    }
 }
 
 @media (max-width:550px){
@@ -234,6 +239,11 @@
         font-size: 2.2rem;
     } 
 
+    .digitacao .cursor{
+        font-size: 2.2rem;
+        margin-left: 1px;
+    }
+
     .logo{
         width: 50px;
         height: auto;
@@ -251,6 +261,9 @@
     .digitacao .texto{
         font-size: 1.8rem;
     } 
+    .digitacao .cursor{
+        font-size: 1.8rem;
+    }
     .redes-cv{
         font-size: 0.9rem;
     }

@@ -32,10 +32,15 @@
   gap: 25px;
   background: #1F1F1F;
   border-radius: 40px;
-  justify-content: center;
-  padding: 40px 60px;
+  justify-content: space-around;
+  padding: 60px 30px;
   align-items: center;
   margin-bottom: 40px;
+}
+
+.projeto-cartao picture img {
+  height: 400px;
+  width: 100%;
 }
 
 .cartao-texto{
@@ -51,10 +56,18 @@
   display: flex;
   gap: 13px;
   padding-block: 18px 25px;
+  align-items: center;
+  display: flex;
+}
+
+.logo-projeto{
+  max-height: 70px;
 }
 
 .projeto-tecnologias img{
-  max-height: 40px;
+  height: 100%;
+  max-width: 30px;
+  width: 100%;
 }
 
 .cartao-texto p{

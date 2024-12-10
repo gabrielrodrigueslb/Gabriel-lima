@@ -42,6 +42,10 @@
 }
 
 @media (max-width:540px){
+    .tecnologias{
+        padding-top: 60px;
+    }
+    
     .tecnologias-icon li img{
         height: 70px;
         width: 70px;
